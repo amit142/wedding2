@@ -34,7 +34,7 @@ nav{
     /*background: antiquewhite;*/
 }
 .sec3{
-    /*background: antiquewhite;*/
+    margin-top:0;
 }
 .footer-container{
     display: flex;
@@ -51,18 +51,22 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 input{
     width: 30%;
     text-align: center;
     padding: 0.8em;
     color: black;
+    background-color: transparent ;
+    font-size: 1em;
 }
 form > button{
     padding: 10px 20px;
     border-radius: 10px;
     background: goldenrod;
     border: none;
+    font-size: 1em;
 }
 a{
     display:grid;
@@ -88,12 +92,16 @@ input[type="checkbox"] + label::before {
 /* Style the custom checkbox design when checked */
 input[type="checkbox"]:checked + label::before {
     background-color: #000;
+
 }
 
 /* Style the label when the checkbox is checked */
 input[type="checkbox"]:checked + label {
+    width: 50%;
+    text-align: center;
     font-weight: bold;
     color: #000;
+
 }
 label{
     margin-bottom: 5px;
