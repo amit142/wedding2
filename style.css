@@ -69,6 +69,36 @@ a{
     place-items: center;
     cursor: pointer;
 }
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the custom checkbox design */
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    background-color: #fff;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Style the custom checkbox design when checked */
+input[type="checkbox"]:checked + label::before {
+    background-color: #000;
+}
+
+/* Style the label when the checkbox is checked */
+input[type="checkbox"]:checked + label {
+    font-weight: bold;
+    color: #000;
+}
+label{
+    margin-bottom: 5px;
+    padding: 5px 0;
+}
 @media (max-width: 600px) {
     footer{
         padding: 5px;
