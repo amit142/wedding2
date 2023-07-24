@@ -7,7 +7,8 @@ body{
     background-image: url("photos/3.JPG");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    /*background-position: center;*/
+    background-attachment: fixed;
     height: 100vh;
     color: goldenrod;
 
@@ -112,6 +113,10 @@ label{
     padding: 5px 0;
 }
 @media (max-width: 600px) {
+    body{
+
+
+    }
     footer{
         padding: 5px;
     }
